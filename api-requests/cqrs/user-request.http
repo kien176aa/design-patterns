@@ -1,0 +1,25 @@
+### Tạo người dùng mới
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Nguyễn Văn A",
+  "email": "nguyenvana@example.com"
+}
+
+### Lấy danh sách tất cả người dùng
+GET http://localhost:8080/users
+Accept: application/json
+
+### Tìm người dùng theo email
+GET http://localhost:8080/users/email/nguyenvana@example.com
+Accept: application/json
+
+### Tạo thêm một người dùng khác
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Trần Thị B",
+  "email": "tranthib@example.com"
+}
