@@ -1,0 +1,18 @@
+
+### 2. Gửi thông báo qua SMS
+POST http://localhost:8080/api/users/1/notify
+Content-Type: application/json
+
+{
+  "type": "sms",
+  "message": "Tèo ơi, có tin nhắn mới!"
+}
+
+### 3. Gửi thông báo qua Email
+POST http://localhost:8080/api/users/1/notify
+Content-Type: application/json
+
+{
+  "type": "email",
+  "message": "Xin chào Tèo, bạn có thông báo từ hệ thống!"
+}

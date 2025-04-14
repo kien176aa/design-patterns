@@ -1,0 +1,9 @@
+### 1. Tạo user mới
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Tèo",
+  "email": "teo@example.com",
+  "phoneNumber": "0123456789"
+}
