@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class EmailNotification implements NotificationStrategy {
     public void send(String to, String message) {
+        String abc = "commit 1";
+        if(abc.equals("commit 1")) {
+            log.info("This is a test commit");
+        }
         log.info("📧 Sending EMAIL to {}: {}", to, message);
     }
 }
