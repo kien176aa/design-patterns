@@ -11,6 +11,11 @@ public class EmailNotification implements NotificationStrategy {
         if(abc.equals("commit 2")) {
             log.info("This is a  22 test commit");
         }
+        int a = 1, b = 4;
+        if(a + b == 5) {
+            log.info("This is five");
+        }
+        log.info("ko cos gi dau nhé");
         log.info("📧 Sending EMAIL to {}: {}", to, message);
     }
 }
